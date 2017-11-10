@@ -6,6 +6,6 @@
     1.<a href="https://github.com/AmyZhangHqin/Springboot/tree/master/SpringBoot-Web1" >SpringBoot-Web1</a>:SpringBoot+JPA的使用
   </li>
   <li>
-    2.<a href="https://github.com/AmyZhangHqin/Springboot/tree/master/Springboot-HelloWorld" >Springboot-HelloWorld</a>:SpringBoot基础学习</li>
+    2.<a href="https://github.com/AmyZhangHqin/Springboot/tree/master/Springboot-HelloWorld" >Springboot-HelloWorld</a>:SpringBoot基础学习</li>
 </ul>  
 
