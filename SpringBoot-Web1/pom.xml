@@ -4,7 +4,7 @@
   <artifactId>SpringBoot-Web1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>SpringBoot-Web1</name>
-  <description>SpringBoot-jpa的使用示例</description>
+  <description>Springboot-jpa的使用示例</description>
   
   <!-- 相关jar包版本 -->
 	<properties>
