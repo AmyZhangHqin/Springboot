@@ -1,4 +1,4 @@
-
+本项目主要练习的是：Springboot中jpa的使用
 application.properties中关于hibernate.hbm2ddl.auto说明：
 	hibernate.hbm2ddl.auto参数的作用主要用于：自动创建|更新|验证数据库表结构,有四个值：
 		1)create：
