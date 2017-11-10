@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.demo.springboot</groupId>
+  <artifactId>SpringBoot-Web1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringBoot-Web1</name>
+  <description>SpringBoot示例</description>
+  
+  <!-- 相关jar包版本 -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<spring-boot.version>1.5.8.RELEASE</spring-boot.version>
+		<mysql-connector.version>6.0.6</mysql-connector.version>
+	</properties>
+
+	<dependencies>
+		<!-- spring-boot 核心模块 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<version>${spring-boot.version}</version>
+		</dependency>
+		<!-- spring boot WEB项目需要引入的jar包: -->
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	        <version>${spring-boot.version}</version>
+      	</dependency>
+        <!-- 热启动 ：相关1-->
+        <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-devtools</artifactId>
+	        <optional>true</optional>
+            <version>${spring-boot.version}</version>
+    	</dependency>
+ 		<!-- mysql、JPA相关jar包引入： -->
+ 		 <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-data-jpa</artifactId>
+	        <version>${spring-boot.version}</version>
+	    </dependency>
+	     <dependency>
+	        <groupId>mysql</groupId>
+	        <artifactId>mysql-connector-java</artifactId>
+	        <version>${mysql-connector.version}</version>
+	    </dependency>
+	</dependencies>
+
+
+
+	<build>
+		<plugins>
+			 <!-- 热启动 ：相关2。 热启动模块在完整的打包环境下运行的时候会被禁用。如果你使用java -jar启动应用或者用一个特定的classloader启动，它会认为这是一个“生产环境”。-->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+	                <fork>true</fork>
+	            </configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+</project>
